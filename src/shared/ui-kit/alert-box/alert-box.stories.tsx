@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import AlertBox from './alert-box.tsx';
+import AlertBox from './alert-box';
 
 const meta: Meta<typeof AlertBox> = {
     title: 'Components/AlertBox',

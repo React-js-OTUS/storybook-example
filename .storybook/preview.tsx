@@ -3,11 +3,9 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 const preview: Preview = {
   parameters: {
-    // Параметры для глобальной конфигурации (например, настройки viewport)
     viewport: {
       viewports: INITIAL_VIEWPORTS,
     },
-    // Настройка фона
     backgrounds: {
       values: [
         { name: 'default', value: '#ffffff' },
