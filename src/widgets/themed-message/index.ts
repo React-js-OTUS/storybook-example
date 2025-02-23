@@ -1,0 +1,1 @@
+export {default as ThemedMessage} from './themed-message'

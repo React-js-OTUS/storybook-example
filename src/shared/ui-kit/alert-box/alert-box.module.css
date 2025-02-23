@@ -1,0 +1,20 @@
+.alertBox {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.info {
+    background-color: #007bff;
+}
+
+.warning {
+    background-color: #ffc107;
+}
+
+.error {
+    background-color: #dc3545;
+}

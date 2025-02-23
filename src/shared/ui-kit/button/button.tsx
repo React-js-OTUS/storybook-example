@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './button.module.css';
+import {clsx} from "clsx";
 
 export interface ButtonProps {
     label: string;
@@ -17,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
     return (
         <button
             onClick={onClick}
-            className={`${styles.button} ${styles[variant]} ${styles[size]}`}
+            className={clsx(styles.button, styles[variant], styles[size])}
         >
             {label}
         </button>
