@@ -1,27 +1,19 @@
 import type { Preview } from "@storybook/react";
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 const preview: Preview = {
   parameters: {
     // Параметры для глобальной конфигурации (например, настройки viewport)
     viewport: {
-      viewports: {
-        viewports: {
-          iphoneX: {
-            name: 'iPhone X',
-            styles: {
-              width: '375px',
-              height: '812px',
-            },
-          },
-          ipadPro: {
-            name: 'iPad Pro',
-            styles: {
-              width: '1024px',
-              height: '1366px',
-            },
-          },
-        },
-      },
+      viewports: INITIAL_VIEWPORTS,
+    },
+    // Настройка фона
+    backgrounds: {
+      values: [
+        { name: 'default', value: '#ffffff' },
+        { name: 'dark', value: '#333333' },
+        { name: 'blue', value: '#007bff' },
+      ],
     },
   },
   decorators: [

@@ -5,7 +5,6 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-onboarding",
     '@storybook/addon-essentials', // включает Controls, Actions, Viewport и др.
-    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
   ],
   framework: {

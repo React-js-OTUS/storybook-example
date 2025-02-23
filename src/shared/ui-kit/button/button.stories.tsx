@@ -31,8 +31,8 @@ export const Primary: StoryObj<typeof Button> = {
 export const Secondary: StoryObj<typeof Button> = {
     render: (args: ButtonProps) => <Button {...args} />,
     args: {
-        label: 'Secondary',
-        variant: 'secondary',
-        size: 'medium',
+        label: "Secondary33",
+        variant: "danger",
+        size: "large",
     },
 };
