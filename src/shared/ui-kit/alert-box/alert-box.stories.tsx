@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import AlertBox from './alert-box';
 
 const meta: Meta<typeof AlertBox> = {

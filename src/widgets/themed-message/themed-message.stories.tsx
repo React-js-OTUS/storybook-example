@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import ThemedMessage, {ThemedMessageProps} from './themed-message';
 import {ThemeProvider} from "@/shared/lib/theme/theme-context";
 
