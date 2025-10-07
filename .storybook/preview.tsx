@@ -1,17 +1,17 @@
-import type { Preview } from "@storybook/react";
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { Preview } from "@storybook/react-vite";
+import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 
 const preview: Preview = {
   parameters: {
     viewport: {
-      viewports: INITIAL_VIEWPORTS,
+      options: INITIAL_VIEWPORTS,
     },
     backgrounds: {
-      values: [
-        { name: 'default', value: '#ffffff' },
-        { name: 'dark', value: '#333333' },
-        { name: 'blue', value: '#007bff' },
-      ],
+      options: {
+        default: { name: 'default', value: '#ffffff' },
+        dark: { name: 'dark', value: '#333333' },
+        blue: { name: 'blue', value: '#007bff' }
+      },
     },
   },
   decorators: [
